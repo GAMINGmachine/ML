@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import csv
 num_attribute=6
 a=[]
@@ -32,22 +26,3 @@ for i in range(0,len(a)):
     print("\n For training Example No:{0} the hypothesis is".format(i),hypothesis)
 print("\n The Maximally specific hypothesis for the training instance is ")
 print(hypothesis)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
