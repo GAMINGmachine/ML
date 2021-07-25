@@ -1,12 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import csv
 a=[]
-with open("D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 1/enjoysport.csv","r") as csvfile:
+with open("enjoysport.csv","r") as csvfile:
     fdata=csv.reader(csvfile)
     for row in fdata:
         a.append(row)
@@ -41,16 +35,3 @@ for i in range(0,len(a)):
     else: 
         print(temp)
     print("......................................................................")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
