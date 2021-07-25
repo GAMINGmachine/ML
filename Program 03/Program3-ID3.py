@@ -1,13 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
-
 import pandas as pd
 import math
 
-df = pd.read_csv('D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 3/PlayTennis.csv')
+df = pd.read_csv('PlayTennis.csv')
 print("\n Input Data Set is:\n", df)
 
 t = df.keys()[-1]
@@ -114,31 +108,6 @@ def classify(instance, tree,default=None): # Instance of Play Tennis with Predic
     else:
         return default
     
-df_new=pd.read_csv('D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 3/PlayTennisTest.csv')
+df_new=pd.read_csv('PlayTennisTest.csv')
 df_new['predicted'] = df_new.apply(classify, axis=1, args=(tree,'?')) 
 print(df_new)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
