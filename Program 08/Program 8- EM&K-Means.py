@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[11]:
-
-
 import matplotlib.pyplot as plt 
 from sklearn import datasets
 from sklearn.cluster import KMeans 
@@ -54,10 +48,3 @@ plt.title('GMM Clustering')
 plt.xlabel('Petal Length') 
 plt.ylabel('Petal Width')
 print('Observation: The GMM using EM algorithm based clustering matched the true labels more closely than the Kmeans.')
-
-
-# In[ ]:
-
-
-
-
