@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 import pandas as pd
 import csv
@@ -11,7 +5,7 @@ from pgmpy.estimators import MaximumLikelihoodEstimator
 from pgmpy.models import BayesianModel
 from pgmpy.inference import VariableElimination
 #read Cleveland Heart Disease data
-heartDisease = pd.read_csv('D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 7/heart.csv')
+heartDisease = pd.read_csv('heart.csv')
 heartDisease = heartDisease.replace('?',np.nan)
 #display the data
 print('Sample instances from the dataset are given below')
@@ -36,10 +30,3 @@ print(q1)
 print('\n 2.Probability of HeartDisease given evidence= cp:3 ')
 q2=HeartDiseasetest_infer.query(variables=['heartdisease'],evidence={'cp':3})
 print(q2)
-
-
-# In[ ]:
-
-
-
-
