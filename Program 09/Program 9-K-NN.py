@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[7]:
-
-
 from sklearn.model_selection import train_test_split 
 from sklearn.neighbors import KNeighborsClassifier 
 from sklearn import datasets
@@ -39,11 +33,3 @@ print('Confusion Matrix')
 print(confusion_matrix(y_test,y_pred)) 
 print('Accuracy Metrics') 
 print(classification_report(y_test,y_pred))
-
-
-
-# In[ ]:
-
-
-
-
