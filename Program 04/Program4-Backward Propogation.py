@@ -1,5 +1,3 @@
-
-
 import numpy as np
 X = np.array(([2, 9], [1, 5], [3, 6])) 
 y = np.array(([92], [86], [89])) 
@@ -61,9 +59,3 @@ for i in range(epoch):
 print("Input: \n" + str(X))
 print("Actual Output: \n" + str(y))
 print("Predicted Output: \n" ,output)
-
-
-
-
-
-
