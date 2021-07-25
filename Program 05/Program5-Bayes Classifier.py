@@ -1,5 +1,3 @@
-
-
 import numpy as np
 import math
 import csv
@@ -87,7 +85,7 @@ def classify(data,test):
     print("accuracy",final_accuracy,"%")
     return
 
-metadata,traindata= read_data("D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 5/tennis.csv")
+metadata,traindata= read_data("tennis.csv")
 splitRatio=0.6
 trainingset, testset=splitDataset(traindata, splitRatio)
 training=np.array(trainingset)
@@ -100,5 +98,3 @@ print("\n The Test data set are:")
 for x in testing:
     print(x)
 classify(training,testing)
-
-
