@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import matplotlib.pyplot as plt 
 import pandas as pd
 import numpy as np
@@ -39,7 +33,7 @@ def graphPlot(X,ypred):
     plt.show();
 
 # load data points
-data = pd.read_csv('D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 10/data10_tips.csv')
+data = pd.read_csv('data10_tips.csv')
 bill = np.array(data.total_bill) # We use only Bill amount and Tips data 
 tip = np.array(data.tip)
 
@@ -51,10 +45,3 @@ X = np.hstack((one.T,mbill.T)) # 244 rows, 2 cols
 
 ypred = localWeightRegression(X,mtip,10) # increase k to get smooth curves 
 graphPlot(X,ypred)
-
-
-# In[ ]:
-
-
-
-
