@@ -1,12 +1,10 @@
-
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn import metrics
 
-msg=pd.read_csv('D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 6/naivetext.csv',names=['message','label'])
+msg=pd.read_csv('naivetext.csv',names=['message','label'])
 
 print('The dimensions of the dataset',msg.shape)
 
@@ -38,10 +36,3 @@ print('\n Confusion matrix')
 print(metrics.confusion_matrix(ytest,predicted))
 print('\n The value of Precision', metrics.precision_score(ytest,predicted))
 print('\n The value of Recall', metrics.recall_score(ytest,predicted))
-
-
-# In[ ]:
-
-
-
-
