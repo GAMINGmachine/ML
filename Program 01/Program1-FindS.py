@@ -1,7 +1,7 @@
 import csv
 num_attribute=6
 a=[]
-with open('D:/6th Sem/ML/ML(Lab)/Machine-Learning-Lab-Programs-main/Program 1/enjoysport.csv', 'r') as csvfile:
+with open('enjoysport.csv', 'r') as csvfile:
     reader=csv.reader(csvfile)
     for row in reader:
         a.append(row)
